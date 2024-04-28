@@ -9,7 +9,11 @@ import json
 
 
 processor = AutoProcessor.from_pretrained("facebook/seamless-m4t-v2-large")
+
+# CHANGE PATH AS PER NEEDED
 model = SeamlessM4Tv2Model.from_pretrained('D:\Manoj\cs6460\Projects\Models\Translation')
+
+
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 # device = "cpu"
 model_device = model.to(device)

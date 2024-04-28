@@ -4,7 +4,10 @@ import os
 
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 # device = "cpu"
+
+# CHANGE PATH AS PER NEEDED
 model = AutoModelForSpeechSeq2Seq.from_pretrained("D:\Manoj\cs6460\Projects\Models\AudioToTxt")
+
 model_id = "openai/whisper-large-v3"
 processor = AutoProcessor.from_pretrained(model_id)
 torch_dtype = torch.float16 if torch.cuda.is_available() else torch.float32

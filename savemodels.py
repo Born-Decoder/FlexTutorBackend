@@ -12,11 +12,13 @@ model = AutoModelForSpeechSeq2Seq.from_pretrained(
 )
 model.to(device)
 
+# CHANGE PATH AS PER NEEDED
 path = "D:/Manoj/cs6460/Projects/Models/AudioToTxt/"
 model.save_pretrained(path)
 
 processor = AutoProcessor.from_pretrained("facebook/seamless-m4t-v2-large")
 model2 = SeamlessM4Tv2Model.from_pretrained("facebook/seamless-m4t-v2-large")
 
+# CHANGE PATH AS PER NEEDED
 path2 = "D:/Manoj/cs6460/Projects/Models/Translation/"
 model2.save_pretrained(path2)
