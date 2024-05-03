@@ -15,7 +15,7 @@ The app is called FlexTutor that uses Text-to-speech, Speech-to-text, Multi-lang
 - Milestone 2 video - https://drive.google.com/file/d/1tjPET3gUS7Ws70PenHQh0b-G-46Ed6bO/view?usp=sharing
 - Note - If other videos are used, then resids.json metadata should be adjusted
 - Videos should be placed under `res/Video/`
-- Add gemini credentials in `credentials.json` in the folloeing format `{
+- Add gemini credentials in `credentials.json` in the following format `{
     "gemini-key": "<yourkey>"
 }`
 - The IDs in `resids.json` should match the youtube video that is being referred, if a different data is used
