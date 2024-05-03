@@ -1,6 +1,10 @@
-# This directory contains Flask setup for app backend
+## About
 
-## Requirements
+The app is called FlexTutor that uses Text-to-speech, Speech-to-text, Multi-language translation models, automatic video summarization techniques and large language models to augment users by providing them effective means of learning and accessing educational content in their own comfortable way they prefer. This would be an Android application that can process videos, audio and video content to help the users and assist them in their learning process.
+
+## This directory contains Flask setup for app backend
+
+### Requirements
 
 - python modules - `flask, google, transformers, torch, moviepy, ffmpeg`
 - install ffmpeg in local https://www.wikihow.com/Install-FFmpeg-on-Windows
@@ -13,7 +17,7 @@
     "gemini-key": "<yourkey>"
 }`
 - The IDs in `resids.json` should match the youtube video that is being referred, if a different data is used
-## Steps to run
+### Steps to run
 
 - Adjust the model directories where you want to save your models in `savemodels.py`
 - Run `savemodels.py` and confirm if the model files are accessible in the necessary target directories
